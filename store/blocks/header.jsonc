@@ -6,16 +6,131 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": ["flex-layout.row#desktop", "flex-layout.row#navbarinitial"]
   },
+  "flex-layout.row#navbarinitial": {
+    "props": {
+      "blockClass": "navbar"
+    },
+    "children": [
+      "flex-layout.col#001",
+      "flex-layout.col#002",
+      "flex-layout.col#003",
+      "flex-layout.col#004",
+      "flex-layout.col#005",
+      "flex-layout.col#006"
+    ]
+  },
+  "flex-layout.col#001": {
+    "children": ["menu-item#promocao"]
+  },
+  "flex-layout.col#002": {
+    "children": ["menu-item#camisas"]
+  },
+  "flex-layout.col#003": {
+    "children": ["menu-item#canecas"]
+  },
+  "flex-layout.col#004": {
+    "children": ["menu-item#adesivos"]
+  },
+  "flex-layout.col#005": {
+    "children": ["menu-item#quadros"]
+  },
+  "flex-layout.col#006": {
+    "children": ["menu-item#about-us"]
+  },
+  "menu-item#promocao": {
+    "props": {
+      "id": "menu-item#promocao",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "promocao",
+        "text": "Promoções"
+      }
+    }
+  },
+  "menu-item#camisas": {
+    "props": {
+      "id": "menu-item#camisas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "camisas",
+        "text": "Camisas"
+      }
+    }
+  },
+  "menu-item#canecas": {
+    "props": {
+      "id": "menu-item#canecas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "canecas",
+        "text": "Canecas"
+      }
+    }
+  },
+  "menu-item#adesivos": {
+    "props": {
+      "id": "menu-item#adesivos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "adesivos",
+        "text": "Adesivos"
+      }
+    }
+  },
+  "menu-item#quadros": {
+    "props": {
+      "id": "menu-item#quadros",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "quadros",
+        "text": "Quadros"
+      }
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "about-us",
+        "text": "About Us"
+      }
+    }
+  },
+
   "flex-layout.row#desktop": {
     "props": {
       "horizontalAlign": "center",
@@ -26,17 +141,11 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
       "login",
       "minicart.v2"
     ]
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
@@ -56,16 +165,10 @@
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": ["flex-layout.row#mobile", "flex-layout.row#navbarinitial"]
   },
   "flex-layout.row#mobile": {
-    "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
+    "children": ["drawer", "logo", "login", "minicart.v2"],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
@@ -74,6 +177,16 @@
     }
   },
   "drawer": {
-    "children": []
+    "props": {
+      "blockClass": "drawer-menu"
+    },
+    "children": [
+      "menu-item#promocao",
+      "menu-item#camisas",
+      "menu-item#canecas",
+      "menu-item#adesivos",
+      "menu-item#quadros",
+      "menu-item#about-us"
+    ]
   }
 }
