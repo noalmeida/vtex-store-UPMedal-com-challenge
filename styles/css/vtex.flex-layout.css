@@ -1,6 +1,10 @@
 .flexRowContent {
   background-color: #383d3b;
 }
+.flexRowContent--navbar {
+  background-color: #383d3b;
+}
+
 .flexRow--navbar {
   background-color: #383d3b;
 }

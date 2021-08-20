@@ -135,13 +135,13 @@
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "preventHorizontalStretch": true,
+      "preventHorizontalStretch": false,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "search-bar",
+      "searchbar",
       "locale-switcher",
       "login",
       "minicart.v2"
