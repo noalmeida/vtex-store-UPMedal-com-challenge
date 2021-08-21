@@ -1,13 +1,38 @@
 {
   "store.home": {
-    "blocks": ["rich-text"]
+    "blocks": ["slider-layout#images"]
   },
-  "rich-text": {
+
+  "slider-layout#images": {
     "props": {
-      "text": "VTEX Store Initial",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#imagem01", "image#imagem02", "image#imagem03"]
+  },
+
+  "image#imagem01": {
+    "props": {
+      "blockClass": "image01",
+      "src": "https://images.pexels.com/photos/1040424/pexels-photo-1040424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    }
+  },
+  "image#imagem02": {
+    "props": {
+      "blockClass": "image01",
+      "src": "https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_960_720.jpg"
+    }
+  },
+  "image#imagem03": {
+    "props": {
+      "blockClass": "image01",
+      "src": "https://cdn.pixabay.com/photo/2016/03/21/20/04/black-1271449__340.png"
     }
   }
 }

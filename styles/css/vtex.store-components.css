@@ -1,8 +1,9 @@
 .container {
   background-color: #383d3b;
 }
-
-.searchBarContainer {
-  min-width: 50rem;
+/* ajustar essas propriedades para imagem */
+.imageElement--image01 {
+  width: 50vw;
+  height: 40vh;
+  border-radius: 1.5rem;
 }
-/* #383d3b */
