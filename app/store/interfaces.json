@@ -4,5 +4,11 @@
   },
   "searchbar": {
     "component": "SearchBar"
+  },
+  "containerlogo": {
+    "component": "ContainerLogo"
+  },
+  "iconHeart": {
+    "component": "IconHeart"
   }
 }

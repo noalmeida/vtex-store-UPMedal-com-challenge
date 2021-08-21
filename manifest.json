@@ -1,6 +1,6 @@
 {
-  "vendor": "vtex",
-  "name": "minimumtheme",
+  "vendor": "hiringcoders2021",
+  "name": "mystore-noanalmeida",
   "version": "0.1.1",
   "builders": {
     "styles": "2.x",
@@ -45,7 +45,7 @@
     "vtex.iframe": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
-    "vtex.mycomponents-hiring0001": "0.x",
+    "vtex.mycomponents-nalmdeida0001": "0.x",
     "vtex.add-to-cart-button": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

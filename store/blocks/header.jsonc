@@ -52,10 +52,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/promocoes",
         "noFollow": false,
         "tagTitle": "promocao",
-        "text": "Promoções"
+        "text": "PROMOÇÕES"
       }
     }
   },
@@ -66,10 +66,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/camisas",
         "noFollow": false,
         "tagTitle": "camisas",
-        "text": "Camisas"
+        "text": "CAMISAS"
       }
     }
   },
@@ -80,10 +80,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/canecas",
         "noFollow": false,
         "tagTitle": "canecas",
-        "text": "Canecas"
+        "text": "CANECAS"
       }
     }
   },
@@ -94,10 +94,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/adesivos",
         "noFollow": false,
         "tagTitle": "adesivos",
-        "text": "Adesivos"
+        "text": "ADESIVOS"
       }
     }
   },
@@ -108,10 +108,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/quadros",
         "noFollow": false,
         "tagTitle": "quadros",
-        "text": "Quadros"
+        "text": "QUADROS"
       }
     }
   },
@@ -126,7 +126,7 @@
         "href": "/about-us",
         "noFollow": false,
         "tagTitle": "about-us",
-        "text": "About Us"
+        "text": "CONTATO"
       }
     }
   },
@@ -140,27 +140,27 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
+      "containerlogo",
       "searchbar",
-      "locale-switcher",
+      "iconHeart",
       "login",
       "minicart.v2"
     ]
   },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo"]
-  },
-  "logo": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
-    }
-  },
+  //   "flex-layout.col#logo-desktop": {
+  //     "props": {
+  //       "verticalAlign": "middle"
+  //     }
+  //     "children": ["containerlogo"]
+  //   },
+  //   "logo": {
+  //     "props": {
+  //       "title": "Logo",
+  //       "href": "../images/logo.svg",
+  //       "src": "../images/logo.svg",
+  //       "width": "80"
+  //     }
+  //   },
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
