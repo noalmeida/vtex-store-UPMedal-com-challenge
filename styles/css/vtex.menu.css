@@ -4,3 +4,9 @@
   font-weight: 600;
   font-size: medium;
 }
+
+.styledLinkContent {
+  color: tomato;
+  margin-top: 9px;
+  font-weight: 500;
+}

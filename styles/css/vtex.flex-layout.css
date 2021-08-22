@@ -1,8 +1,9 @@
-.flexRowContent {
-  background-color: #1c1c1c;
-  color: #ff6f00;
+.flexRow {
+  background-color: #3d3d3d;
+  display: relative;
 }
-.flexRowContent--navbar {
+
+.flexRowContent {
   background-color: #1c1c1c;
 }
 
@@ -10,7 +11,12 @@
   background-color: #1c1c1c;
 }
 
-.flexRow {
-  display: flex;
-  align-items: center;
+.flexRow--footerbar {
+  background-color: #1c1c1c;
+  height: 8vh;
+}
+
+.flexRowContent {
+  background-color: #1c1c1c;
+  color: #ff6f00;
 }

@@ -1,12 +1,31 @@
+.caretIcon--carousel {
+  margin-top: 45vh;
+  color: cornsilk;
+  padding: 0 30vw;
+  width: 15px;
+  height: auto;
+}
 .caretIcon {
   margin-top: 45vh;
   color: cornsilk;
   padding: 0 30vw;
+  width: 15px;
+  height: auto;
 }
-.paginationDot {
+.sliderLeftArrow {
+  margin-left: 3vw;
+}
+.sliderRightArrow {
+  margin-right: 5vw;
+}
+.paginationDot--carousel {
   margin-bottom: -50rem;
   margin-top: 2rem;
 }
 .sliderLayoutContainer {
+  background-color: #3d3d3d;
+}
+.sliderLayoutContainer--shelf {
+  display: flex;
   background-color: #3d3d3d;
 }

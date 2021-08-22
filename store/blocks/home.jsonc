@@ -45,7 +45,7 @@
       "isFullModeStyle": false,
       "textPosition": "left",
       "imageUrl": "https://cdn.pixabay.com/photo/2016/08/12/00/38/title-1587327_960_720.jpg",
-      "headline": "Clearance Sale",
+      "headline": "Camisas do momento",
       "callToActionText": "Descubra",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-primeiro",
@@ -58,7 +58,7 @@
       "isFullModeStyle": false,
       "textPosition": "right",
       "imageUrl": "https://cdn.pixabay.com/photo/2014/08/05/10/31/waiting-410328_960_720.jpg",
-      "headline": "Clearance Sale",
+      "headline": "Vendas em alta",
       "callToActionText": "Descubra",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-segundo",
@@ -118,9 +118,9 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
-        "phone": 1
+        "phone": 4
       },
       "infinite": true,
       "fullWidth": false,

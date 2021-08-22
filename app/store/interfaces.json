@@ -10,5 +10,8 @@
   },
   "iconHeart": {
     "component": "IconHeart"
+  },
+  "suportewhatsap": {
+    "component": "SuporteWhatsap"
   }
 }

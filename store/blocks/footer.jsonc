@@ -3,18 +3,90 @@
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
-    "children": ["flex-layout.row#footer"]
+    "children": ["sticky-layout#desktop-footer"]
   },
   "footer-layout.mobile": {
+    "children": ["sticky-layout#mobile-footer"]
+  },
+  "sticky-layout#desktop-footer": {
+    "props": {
+      "position": "bottom",
+      "blockClass": "sticky-footer"
+    },
     "children": ["flex-layout.row#footer"]
   },
-  "flex-layout.row#footer": {
-    "children": ["image"]
-  },
-  "image": {
+  "sticky-layout#mobile-footer": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "position": "bottom",
+      "blockClass": "sticky-footer"
+    },
+    "children": ["flex-layout.row#footer"]
+  },
+
+  "flex-layout.row#footer": {
+    "props": {
+      "blockClass": "footerbar"
+    },
+    "children": [
+      "flex-layout.col#perfil",
+      "flex-layout.col#desafios",
+      "flex-layout.col#loja",
+      "flex-layout.col#suporte"
+    ]
+  },
+  "flex-layout.col#perfil": {
+    "children": ["menu-item#perfil"]
+  },
+  "flex-layout.col#desafios": {
+    "children": ["menu-item#desafios"]
+  },
+  "flex-layout.col#loja": {
+    "children": ["menu-item#loja"]
+  },
+  "flex-layout.col#suporte": {
+    "children": ["suportewhatsap"]
+  },
+  "menu-item#perfil": {
+    "props": {
+      "id": "menu-item#perfil",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/perfil",
+        "noFollow": false,
+        "tagTitle": "perfil",
+        "text": "PERFIL"
+      }
+    }
+  },
+
+  "menu-item#desafios": {
+    "props": {
+      "id": "menu-item#desafios",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/desafios",
+        "noFollow": false,
+        "tagTitle": "desafios",
+        "text": "DESAFIOS"
+      }
+    }
+  },
+  "menu-item#loja": {
+    "props": {
+      "id": "menu-item#loja",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/loja",
+        "noFollow": false,
+        "tagTitle": "loja",
+        "text": "LOJA"
+      }
     }
   }
 }
