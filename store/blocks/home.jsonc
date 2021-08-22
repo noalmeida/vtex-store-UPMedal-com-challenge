@@ -1,6 +1,84 @@
 {
   "store.home": {
-    "blocks": ["slider-layout#images"]
+    "blocks": ["slider-layout#images", "tab-layout#home"]
+  },
+
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
+    }
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#home1", "tab-list.item#home2"]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "home1",
+      "label": "promoções",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "home2",
+      "label": "destaques"
+    }
+  },
+  "tab-content#home": {
+    "children": ["tab-content.item#home1", "tab-content.item#home2"]
+  },
+  "tab-content.item#home1": {
+    "children": ["carousel#home"],
+    "props": {
+      "tabId": "home1"
+    }
+  },
+  "carousel#home": {},
+  "tab-content.item#home2": {
+    "children": [
+      "info-card#home",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
+    ],
+    "props": {
+      "tabId": "home2"
+    }
+  },
+  "rich-text#question": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Visit our [help](https://help.vtex.com/en/faq/what-is-vtex-io) section.\n*Be Bold!*\n**This is italic**",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Visit our [help](https://help.vtex.com/en/faq/what-is-vtex-io) section.\n*Be Bold!*\n**This is italic**",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
   },
 
   "slider-layout#images": {
