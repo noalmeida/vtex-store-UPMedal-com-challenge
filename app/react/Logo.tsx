@@ -48,9 +48,6 @@ const Logo = ({ onClick }: any) => {
       >
         <path
           className="b"
-          // stroke="#E6DB74"
-          // stroke="#FFF275"
-          // stroke="#FFBD00"
           stroke="#FFFCF2"
           strokeWidth="20"
           strokeLinecap="round"

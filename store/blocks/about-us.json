@@ -17,7 +17,7 @@
 
   "rich-text#title-about-us": {
     "props": {
-      "text": "# Create meaningful and relevant experiences.",
+      "text": "# Crie experiências relevantes.",
       "blockClass": "title"
     }
   },
@@ -32,14 +32,14 @@
   },
   "video#about-us": {
     "props": {
-      "src": "https://www.youtube.com/embed/JgkrlaF52WQ",
-      "width": "100%",
-      "height": "100%"
+      "src": "https://youtu.be/HMFWEWbPbsc",
+      "width": "50%",
+      "height": "50%"
     }
   },
   "rich-text#about-us": {
     "props": {
-      "text": "**Optimized store framework** \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n **Multi-currency and language** \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n **Serverless development platform** \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
+      "text": "**Somos uma loja em crescimento** \n  graças a você.",
       "blockClass": "about"
     }
   }

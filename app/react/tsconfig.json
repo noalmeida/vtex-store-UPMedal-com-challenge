@@ -2,7 +2,6 @@
   "extends": "@vtex/tsconfig",
   "compilerOptions": {
     "jsx": "react",
-    "scss": "css",
     "esModuleInterop": true,
     "noEmitOnError": false,
     "typeRoots": ["node_modules/@types"],
