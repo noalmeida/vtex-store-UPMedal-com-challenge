@@ -1,5 +1,6 @@
 .flexRowContent {
   background-color: #1c1c1c;
+  color: #ff6f00;
 }
 .flexRowContent--navbar {
   background-color: #1c1c1c;
@@ -7,4 +8,9 @@
 
 .flexRow--navbar {
   background-color: #1c1c1c;
+}
+
+.flexRow {
+  display: flex;
+  align-items: center;
 }

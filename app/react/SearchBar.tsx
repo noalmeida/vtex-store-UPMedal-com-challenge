@@ -1,74 +1,66 @@
-import React from "react";
-import {
-  createStyles,
-  alpha,
-  Theme,
-  makeStyles,
-} from "@material-ui/core/styles";
+import * as React from "react";
 import SearchIcon from "@material-ui/icons/Search";
-import InputBase from "@material-ui/core/InputBase";
+const styles = `
+  .search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    search: {
-      position: "relative",
-      borderRadius: theme.shape.borderRadius,
-      backgroundColor: alpha(theme.palette.common.white, 0.15),
-      "&:hover": {
-        backgroundColor: alpha(theme.palette.common.white, 0.25),
-      },
-      marginTop: 20,
-      marginLeft: 0,
-      width: "100%",
-      height: "45%",
-      [theme.breakpoints.up("sm")]: {
-        marginLeft: theme.spacing(1),
-        width: "auto",
-      },
-    },
-    searchIcon: {
-      padding: theme.spacing(0, 2),
-      height: "100%",
-      position: "absolute",
-      pointerEvents: "none",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-    inputRoot: {
-      color: "inherit",
-    },
-    inputInput: {
-      padding: theme.spacing(2, 1, 1, 0),
-      // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-      transition: theme.transitions.create("width"),
-      width: "100%",
-      [theme.breakpoints.up("sm")]: {
-        width: "12ch",
-        "&:focus": {
-          width: "20ch",
-        },
-      },
-    },
-  })
-);
+.searchTerm {
+  width: 100%;
+  border: 1px solid #32ff7e;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding: 5px;
+  height: 2.2rem;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: white;
+  margin-bottom: 90px;
+  background-color: transparent;
+}
 
-export default function Search() {
-  const classes = useStyles();
+.searchTerm:focus{
+  color: #32ff7e";
+  
+}
+
+.searchButton {
+  width: 40px;
+  height: 35px;
+  border: 1px solid #32ff7e;
+  background: transparent;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.searchButton:hover{
+    background: #FF6F00;
+} 
+
+.wrap {
+  width: 30%;
+  height: 34px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+  `;
+export default function SearchBar() {
   return (
-    <form className={classes.search}>
-      <div className={classes.searchIcon}>
-        <SearchIcon />
+    <div className="wrap">
+      <div className="search">
+        <input type="text" className="searchTerm" placeholder="Buscar" />
+        <button type="submit" className="searchButton">
+          <SearchIcon />
+        </button>
       </div>
-      <InputBase
-        placeholder="Buscar..."
-        classes={{
-          root: classes.inputRoot,
-          input: classes.inputInput,
-        }}
-        inputProps={{ "aria-label": "search " }}
-      />
-    </form>
+      <style>{styles}</style>
+    </div>
   );
 }

@@ -147,20 +147,7 @@
       "minicart.v2"
     ]
   },
-  //   "flex-layout.col#logo-desktop": {
-  //     "props": {
-  //       "verticalAlign": "middle"
-  //     }
-  //     "children": ["containerlogo"]
-  //   },
-  //   "logo": {
-  //     "props": {
-  //       "title": "Logo",
-  //       "href": "../images/logo.svg",
-  //       "src": "../images/logo.svg",
-  //       "width": "80"
-  //     }
-  //   },
+
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },

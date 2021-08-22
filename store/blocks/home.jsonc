@@ -1,6 +1,10 @@
 {
   "store.home": {
-    "blocks": ["slider-layout#images", "tab-layout#home"]
+    "blocks": [
+      "slider-layout#images",
+      "tab-layout#home",
+      "flex-layout.row#shelf"
+    ]
   },
 
   "tab-layout#home": {
@@ -30,54 +34,42 @@
     "children": ["tab-content.item#home1", "tab-content.item#home2"]
   },
   "tab-content.item#home1": {
-    "children": ["carousel#home"],
+    "children": ["info-card#primeiro"],
     "props": {
       "tabId": "home1"
     }
   },
-  "carousel#home": {},
-  "tab-content.item#home2": {
-    "children": [
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
-    ],
+  "info-card#primeiro": {
     "props": {
-      "tabId": "home2"
-    }
-  },
-  "rich-text#question": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Visit our [help](https://help.vtex.com/en/faq/what-is-vtex-io) section.\n*Be Bold!*\n**This is italic**",
-      "textColor": "c-on-emphasis",
-      "font": "t-heading-5",
-      "blockClass": "help-message"
-    }
-  },
-  "rich-text#link": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "Visit our [help](https://help.vtex.com/en/faq/what-is-vtex-io) section.\n*Be Bold!*\n**This is italic**",
-      "textColor": "c-on-emphasis",
-      "font": "t-heading-5",
-      "blockClass": "help-message"
-    }
-  },
-  "info-card#home": {
-    "props": {
-      "id": "info-card-example",
+      "id": "info-card-primeiro",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/08/12/00/38/title-1587327_960_720.jpg",
       "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "callToActionText": "Descubra",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-example",
+      "blockClass": "info-card-primeiro",
       "textAlignment": "center"
+    }
+  },
+  "info-card#segundo": {
+    "props": {
+      "id": "info-card-segundo",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/08/05/10/31/waiting-410328_960_720.jpg",
+      "headline": "Clearance Sale",
+      "callToActionText": "Descubra",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-segundo",
+      "textAlignment": "center"
+    }
+  },
+
+  "tab-content.item#home2": {
+    "children": ["info-card#segundo"],
+    "props": {
+      "tabId": "home2"
     }
   },
 
@@ -111,6 +103,28 @@
     "props": {
       "blockClass": "image01",
       "src": "https://cdn.pixabay.com/photo/2016/03/21/20/04/black-1271449__340.png"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
     }
   }
 }

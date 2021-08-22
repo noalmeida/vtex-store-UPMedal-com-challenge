@@ -7,3 +7,8 @@
   height: 40vh;
   border-radius: 1.5rem;
 }
+.infoCardContainer {
+  width: 50vw;
+  justify-content: center;
+  margin-left: 30rem;
+}
