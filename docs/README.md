@@ -19,6 +19,6 @@ no terminal usar: vtex link
 ### Step 3 - Access to store.
 
 abrir o link da loja.
-https://nalmeida01--hiringcoders2021.myvtex.com
+
 
 
